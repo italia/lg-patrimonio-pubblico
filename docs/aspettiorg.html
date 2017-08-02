@@ -1,0 +1,850 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Aspetti organizzativi e qualità dei dati &mdash; #Datipubblici - linee guida patrimonio informativo pubblico versione 1.0 - 2017 documentazione</title>
+               
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />   
+    <link rel="index" title="Indice" href="genindex.html" />
+    <link rel="search" title="Cerca" href="search.html" />
+    <link rel="top" title="#Datipubblici - linee guida patrimonio informativo pubblico versione 1.0 - 2017 documentazione" href="index.html" />
+    <link rel="next" title="Architettura dell’Informazione del Settore Pubblico" href="arch.html" />
+    <link rel="prev" title="Modello per i metadati" href="modellometadati.html" />  
+    <script src="_static/js/modernizr.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600" rel="stylesheet">
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+     
+    <div class="wy-grid-for-nav">
+
+        
+        <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+            <div class="wy-side-scroll">
+                <div class="wy-side-nav-search">
+                    
+
+                    <div class="branding clearfix">
+                        <div class="branding--logo">
+                            <a href="https://docs.developers.italia.it">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+                              <g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h160v160H0z"/>
+                                <path fill="#fff" d="M58.28 131.956V49.918h21.5v82.184h-21.5v-.146zm84.435-63.353h-19.65v33.72c0 3.358.143 5.547.285 7.007.143 1.314.712 2.482 1.71 3.504.996 1.02 2.562 1.46 4.698 1.46l12.245-.293.997 17.52c-7.12 1.606-12.673 2.48-16.375 2.48-9.682 0-16.232-2.19-19.65-6.713-3.56-4.38-5.267-12.554-5.267-24.524V27h21.5v22.772h19.65v18.83h-.143zM25.957 74.88c-3.702 0-6.834-1.314-9.255-3.94C14.282 68.31 13 65.1 13 61.303c0-3.795 1.28-7.007 3.56-9.634 2.42-2.63 5.553-3.798 9.255-3.798 3.702 0 6.835 1.314 9.255 3.942 2.42 2.627 3.56 5.84 3.56 9.78 0 3.942-1.14 7.007-3.56 9.635-2.278 2.335-5.268 3.65-9.113 3.65z"/>
+                              </g>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="branding--content">
+                            <h2 class="branding--title">
+                                <span class="branding--title--root">/ <a href="https://developers.italia.it">developers</a></span>
+                                <span class="branding--title--branch">/ <a href="https://docs.developers.italia.it">docs</a></span>
+                            </h2>
+                        </div>
+                        <h3 class="branding--tagline">La community italiana degli sviluppatori di servizi pubblici</h3>
+                    </div>
+
+            
+            <a href="index.html">
+            
+            <img src="_static/agid-logo.svg" class="logo" />
+            </a>
+            
+            
+            <h1 class="project-title"><a href="index.html" class="icon icon-home"> #Datipubblici - linee guida patrimonio informativo pubblico </a></h1>
+            
+
+
+                     
+                    
+                    <div class="version">versione 1.0 - 2017</div>
+                      
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div> 
+                </div>
+
+                <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                          <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="revisioni.html">Revisioni del documento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="executivesummary.html">Executive Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acronimi.html">Acronimi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scopodeststruttura.html">Scopo e destinatari</a></li>
+<li class="toctree-l1"><a class="reference internal" href="normativa.html">Normativa di Riferimento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dati.html">Dati della Pubblica Amministrazione</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modellodati.html">Modello per i dati aperti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modellometadati.html">Modello per i metadati</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Aspetti organizzativi e qualità dei dati</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#aspetti-organizzativi">Aspetti organizzativi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ruoli-e-responsabilita">Ruoli e responsabilità</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#gruppo-di-lavoro-open-data">Gruppo di lavoro Open Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#responsabile-open-data-o-data-manager">Responsabile Open Data (o Data Manager)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#responsabile-della-banca-dati">Responsabile della banca dati</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#referente-tecnico-della-banca-dati">Referente tecnico della banca dati</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#referente-tematico-della-banca-dati">Referente tematico della banca dati</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ufficio-statistica">Ufficio Statistica</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ufficio-giuridico-amministrativo">Ufficio giuridico-amministrativo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gruppo-comunicazione">Gruppo comunicazione</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#il-modello-raci">Il Modello RACI</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#i-processi-del-modello-operativo">I processi del modello operativo</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#linea-1-dati-nativi">Linea 1: Dati Nativi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#linea-2-dati-mashup">Linea 2: Dati Mashup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#linea-3-linked-open-data">Linea 3: Linked Open Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#linea-4-coinvolgimento-engagement">Linea 4: Coinvolgimento (Engagement)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#coordinamento-tra-il-livello-nazionale-e-locale">Coordinamento tra il livello nazionale e locale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#qualita-dei-dati">Qualità dei dati</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#caratteristiche-di-qualita">Caratteristiche di qualità</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#certificati-open-data-odi">Certificati Open Data ODI</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arch.html">Architettura dell&#8217;Informazione del Settore Pubblico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="licenzecosti.html">Aspetti legali e di costo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publdatigov.html">Pubblicazione e dati.gov.it</a></li>
+</ul>
+  
+                </div>
+            </div>
+        </nav>
+
+        <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+            
+            <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+                
+                <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+                <a href="index.html">#Datipubblici - linee guida patrimonio informativo pubblico</a> 
+            </nav>
+
+
+            
+            <div class="wy-nav-content">
+                <div class="rst-content">
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Aspetti organizzativi e qualità dei dati</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/aspettiorg.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+                    <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+                        <div itemprop="articleBody">
+                            
+  <div class="section" id="aspetti-organizzativi-e-qualita-dei-dati">
+<h1>Aspetti organizzativi e qualità dei dati<a class="headerlink" href="#aspetti-organizzativi-e-qualita-dei-dati" title="Link a questa intestazione">¶</a></h1>
+<div class="section" id="aspetti-organizzativi">
+<h2>Aspetti organizzativi<a class="headerlink" href="#aspetti-organizzativi" title="Link a questa intestazione">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p><strong>AZIONE 6: INDIVIDUA UNA DATA GOVERNANCE E ASSICURATI CHE I PROCESSI INTEGRINO IL RILASCIO DI DATI APERTI E IL COINVOLGIMENTO DEGLI UTENTI ...</strong></p>
+<p>Si adotta il modello operativo mostrato in Figura 5. Il modello ha l’obiettivo di garantire la produzione e la pubblicazione di dati (aperti) di qualità attraverso un processo omogeneo, auto-sostenibile, coordinato tra gli organi interni dell’amministrazione, con la definizione di procedimenti condivisi che possano creare un tessuto sufficientemente robusto e stabile nei suoi punti fondamentali, e necessariamente elastico per l’applicazione alle diverse realtà amministrative.</p>
+<p class="last">Per attuare il modello è necessario <strong>(i) definire una chiara data governance interna con l’individuazione di ruoli e relative responsabilità; (ii) integrare le sue fasi sia verticalmente, rispetto ai processi interni già consolidati, che orizzontalmente rispetto alle necessità delle diverse amministrazioni</strong>. L’applicazione del modello deve avvenire in maniera costante: le attività non si esauriscono con la mera pubblicazione dei dati, ove questo sia possibile, ma devono prevedere un <strong>costante aggiornamento, monitoraggio e coinvolgimento con gli utenti finali</strong>.</p>
+</div>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/AspettiOrganizzativi.png"><img alt="Figura 5: Modello operativo: produzione e pubblicazione di dati aperti" src="_images/AspettiOrganizzativi.png" style="width: 85%;" /></a>
+<p class="caption"><span class="caption-text">Figura 5: Modello operativo: produzione e pubblicazione di dati aperti</span></p>
+</div>
+<p>L’attuale contesto, sempre più incentrato sull’uso dei dati, pone il problema di intervenire su alcune fasi della catena del valore del dato: la scelta della migliore fonte informativa, il controllo della qualità del dato, l’integrazione di fonti diverse, la tempestività nell’aggiornamento, ecc.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Avvertimento</p>
+<p class="last">Al riguardo, oggi si rende sempre più necessaria la revisione dei processi e dei modelli dei sistemi informativi delle pubbliche amministrazioni, organizzandoli in maniera organica, <strong>facendo in modo che il processo di apertura dei dati non sia sempre e solo parallelo a quello di gestione dei dati ma pienamente integrato</strong>.</p>
+</div>
+<p>Un dato della PA destinato alla pubblicazione è frutto di una catena di processi nel corso della quale si generano ulteriori prodotti intermedi. Comprendere e governare la struttura di questa catena diventa elemento cruciale. Affinché tale attività non sia assunta come un mero adempimento tecnologico, a essa deve corrispondere:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>l’ottimizzazione dei processi esistenti all’interno dei quali l’Open Data deve far parte integrante;</li>
+<li>la dislocazione di soluzioni interoperabili che possano contribuire all’ottimizzazione dei processi;</li>
+<li>una riduzione nei costi e nei tempi di accesso al capitale informativo;</li>
+<li>una riduzione della complessità dei processi interni attraverso il consolidamento delle attività derivate da 1) e 2);</li>
+<li>l’ottimizzazione dei tempi e dei canali di comunicazione istituzionali relativi al capitale informativo verso risorse esterne all’amministrazione.</li>
+</ol>
+</div></blockquote>
+<p>Il primo passo da compiere è quello di <strong>individuare una chiara data governance interna con professionalità strategiche e specifiche</strong>.</p>
+<div class="section" id="ruoli-e-responsabilita">
+<h3>Ruoli e responsabilità<a class="headerlink" href="#ruoli-e-responsabilita" title="Link a questa intestazione">¶</a></h3>
+<p>Di seguito si elencano i componenti di un possibile gruppo di lavoro orizzontale e inter-settoriale che un’amministrazione può costituire per avviare e gestire a regime il processo di gestione dei dati in generale e, nello specifico, di apertura dei dati. Dipendentemente dalle dimensioni delle amministrazioni, alcune figure professionali possono coincidere o possono essere ulteriormente distinte.</p>
+<div class="section" id="gruppo-di-lavoro-open-data">
+<h4>Gruppo di lavoro Open Data<a class="headerlink" href="#gruppo-di-lavoro-open-data" title="Link a questa intestazione">¶</a></h4>
+<p>Il gruppo che promuove l’uso e la diffusione degli Open Data. Esso riporta all’interno dell’amministrazione le novità inerenti il mondo dell’Open Government, media e valuta le esigenze di pubblicazione dati in base alle normative di riferimento, e ne cura la razionalizzazione rispetto agli altri processi di apertura del dato. Ha la responsabilità di pianificare e coordinare l’evoluzione continua dell’apertura dei dati nell’amministrazione, nonché dell’infrastruttura IT a supporto.</p>
+<p>All&#8217;interno del gruppo di lavoro è bene prevedere figure che possano fornire il necessario supporto per l&#8217;analisi della qualità dei dati, per la definizione delle interfacce d&#8217;accesso ai dati, per la promozione di applicazioni sviluppate a partire dai dati pubblicati, fornendo anche nel caso esempi di servizi dimostrativi attraverso cui incentivare il riutilizzo.</p>
+<p>Inoltre, il gruppo di lavoro si può occupare della formazione tecnica e concettuale all’interno dell’amministrazione sui temi legati al paradigma Open Data, anche sulla base delle linee guida pubblicate dall’Agenzia per l’Italia Digitale e sullo stato dell’arte degli Open Data dell’amministrazione. Alcuni membri del team (e.g., esperti di tecnologie Web, esperti GIS, esperti di tecnologie e strumenti per i Linked Data) possono occuparsi della gestione del processo di apertura del dato dal punto di vista IT.</p>
+<p>Affinché il lavoro del Team Open Data possa essere incisivo all’interno dell’amministrazione, è importante che tale team si confronti con il livello più politico, sia per ottenere da questo le necessarie &#8216;spinte&#8217;, sia per offrire al decisore politico proposte e stimoli.</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Infine, l&#8217;art. 17 del Codice dell’Amministrazione Digitale individua un ufficio dirigenziale generale responsabile per la transizione alla modalità operativa digitale e un difensore civico per il digitale che ha il compito di ricevere segnalazioni di violazione del CAD invitando l&#8217;ufficio a porvi rimedio.
+Si ritiene importante che il responsabile dell&#8217;ufficio suddetto (articolo 17 comma 1-ter)  faccia parte del gruppo di lavoro open data, anche come figura di raccordo con il livello più politico e che il difensore civico operi in stretta collaborazione con il gruppo open data.</p>
+</div>
+</div>
+<div class="section" id="responsabile-open-data-o-data-manager">
+<h4>Responsabile Open Data (o Data Manager)<a class="headerlink" href="#responsabile-open-data-o-data-manager" title="Link a questa intestazione">¶</a></h4>
+<p>All’interno del team Open Data è nominato un responsabile. Tale figura permette da un lato di localizzare le competenze necessarie alla gestione delle attività Open Data entro un sistema autonomo di comunicazione e funzionamento, e dall’altro di integrare i processi relativi alle attività di trasparenza in modo parallelo e non seriale. Il responsabile Open Data deve quindi possedere sia le capacità operative di controllo di tale sistema, sia quelle amministrative di coordinamento con i processi già esistenti.</p>
+<p>Insieme al team suddetto, conosce i dati dell’amministrazione nel loro insieme, redige linee guida operative per lo scambio dati tra le diverse figure coinvolte (si veda sotto), e pianifica la strategia di apertura dei dati raccolti e analizzati e le attività di diffusione dei dati. Infine, collabora e si coordina con il Responsabile della Trasparenza (quest’ultimo istituito ai sensi del D.lgs. n. 33/2013 e s.m.i) al fine di rafforzare vicendevolmente gli obiettivi da un lato di massimo riutilizzo dei dati pubblici di tipo aperto e dall’altro di trasparenza.</p>
+</div>
+<div class="section" id="responsabile-della-banca-dati">
+<h4>Responsabile della banca dati<a class="headerlink" href="#responsabile-della-banca-dati" title="Link a questa intestazione">¶</a></h4>
+<p>All’interno dell’amministrazione è responsabile del procedimento amministrativo che popola la specifica fonte del dato, che ne cura la qualità e il relativo aggiornamento. Tipicamente un Dirigente o un Quadro, coordina un gruppo di persone che svolgono il loro lavoro quotidiano attorno alla fonte del dato. Ha anche il potere di decidere se modificare un certo dato sulla base di indicazioni pervenute ad esempio da cittadini che, vedendo il dataset, ne richiedono una versione evoluta.</p>
+</div>
+<div class="section" id="referente-tecnico-della-banca-dati">
+<h4>Referente tecnico della banca dati<a class="headerlink" href="#referente-tecnico-della-banca-dati" title="Link a questa intestazione">¶</a></h4>
+<p>Si tratta tipicamente di un componente del gruppo coordinato dal responsabile della banca dati; esso deve avere conoscenze informatiche e svolge un ruolo operativo sul sistema gestionale afferente al dato. Inoltre, fornisce indicazioni circa il reperimento concreto dei dati dalla base dati, e cura il monitoraggio dei vari “connettori” che a partire dalla base dati espongono il dato come Open Data. Tipicamente riceve materialmente le segnalazioni dei cittadini sul dataset di propria competenza, e le smista eventualmente al Referente tematico per valutarne il contenuto, prima di chiedere al Responsabile della Banca Dati l’approvazione per eventuali azioni correttive strutturali sul dataset.</p>
+</div>
+<div class="section" id="referente-tematico-della-banca-dati">
+<h4>Referente tematico della banca dati<a class="headerlink" href="#referente-tematico-della-banca-dati" title="Link a questa intestazione">¶</a></h4>
+<p>Si tratta di un esperto di dominio che conosce in modo approfondito l’ufficio e la storia dei dati su cui l’ufficio opera. Spesso propone nuovi dataset da esporre a partire dal sistema gestionale corrispondente e cura eventuali valutazioni di dominio o relative al significato dei dati. Ha anche la possibilità di compiere bonifiche e semplici adeguamenti sulla banca dati, su segnalazione di cittadini o su valutazioni proprie. Riferisce invece al Responsabile della Banca dati la necessità di eventuali variazioni strutturali al sistema gestionale che insiste sui dati.</p>
+</div>
+<div class="section" id="ufficio-statistica">
+<h4>Ufficio Statistica<a class="headerlink" href="#ufficio-statistica" title="Link a questa intestazione">¶</a></h4>
+<p>Un anello importante dell’intera catena, sia nel promuovere nuove tipologie di dataset da esporre, sia nel validare dal punto di vista metodologico e statistico i dati pubblicati e le loro visualizzazioni.</p>
+</div>
+<div class="section" id="ufficio-giuridico-amministrativo">
+<h4>Ufficio giuridico-amministrativo<a class="headerlink" href="#ufficio-giuridico-amministrativo" title="Link a questa intestazione">¶</a></h4>
+<p>Può assumere le più svariate forme in base all’organizzazione interna dell’amministrazione. In generale esso rappresenta una singola figura che fornisce consulenza sia su aspetti non tecnici legati agli Open Data, come la definizione delle licenze e delle note legali associate ai dati, la loro rimodulazione sulla base di esigenze specifiche (si pensi per esempio alla necessità di aprire dati prodotti da terze parti o addirittura da cittadini), sia su tutte quelle problematiche di tipo giuridico o amministrativo, comprese quelle di privacy, di finalità del dataset e di trattamento del dato personale ove presente.</p>
+</div>
+<div class="section" id="gruppo-comunicazione">
+<h4>Gruppo comunicazione<a class="headerlink" href="#gruppo-comunicazione" title="Link a questa intestazione">¶</a></h4>
+<p>Può assumere varie forme in base all’organizzazione interna dell’amministrazione, ma in ogni caso si indicano quelle figure con competenze di comunicazione istituzionale e non solo, in grado di curare la comunicazione e il dialogo con i cittadini.</p>
+</div>
+<div class="section" id="il-modello-raci">
+<h4>Il Modello RACI<a class="headerlink" href="#il-modello-raci" title="Link a questa intestazione">¶</a></h4>
+<p>Rispetto alle linee di azione del modello operativo mostrato in Figura 5, e descritte di seguito, si individua la matrice dei Ruoli e delle Responsabilità (RACI) <a class="footnote-reference" href="#id2" id="id1">[3]</a> tra le diverse figure identificate.</p>
+<table border="1" class="colwidths-given docutils align-center">
+<colgroup>
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Processo</th>
+<th class="head">Responsabile OD</th>
+<th class="head">Responsabile BD</th>
+<th class="head">Referente tecnico BD</th>
+<th class="head">Referente Tematico BD</th>
+<th class="head">Ufficio Statistica</th>
+<th class="head">Ufficio giuridico-amministrativo</th>
+<th class="head">Team comunicazione</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Dati nativi</td>
+<td>A/R</td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+<td>C</td>
+<td>C</td>
+<td>I</td>
+</tr>
+<tr class="row-odd"><td>Dati mashup</td>
+<td>A/R</td>
+<td>C</td>
+<td>R</td>
+<td>C</td>
+<td>C</td>
+<td>C</td>
+<td>I</td>
+</tr>
+<tr class="row-even"><td>Linked Open Data</td>
+<td>R</td>
+<td>A/R</td>
+<td>R</td>
+<td>R</td>
+<td>C</td>
+<td>C</td>
+<td>I</td>
+</tr>
+<tr class="row-odd"><td>Coinvolgimento</td>
+<td>A</td>
+<td>C</td>
+<td>I</td>
+<td>I</td>
+<td>C</td>
+<td>C</td>
+<td>R</td>
+</tr>
+</tbody>
+</table>
+<p>Dove OD = Open Data, BD = Base Dati e</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Responsible (R)</strong>: Coloro che lavorano per eseguire un determinato compito. Esiste almeno un ruolo di responsabile.</li>
+<li><strong>Accountable (A)</strong>: Il solo che può approvare il corretto completamento di un compito e che delega il lavoro ai responsabili. Può esistere un solo ruolo accountable per uno specifico compito.</li>
+<li><strong>Consulted (C)</strong>: Coloro che possono essere consultati in quanto esperti di dominio e con i quali instaurare una comunicazione bidirezionale.</li>
+<li><strong>Informed (I)</strong>: Coloro che devono essere tenuti aggiornati sui progressi del processo, spesso al termine dello stesso.</li>
+</ul>
+</div></blockquote>
+<p class="rubric">Bibliografia</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[3]</a></td><td>A Guide to the Project Management Body of Knowledge (PMBOK Guide). PMI Standards Committee, Project Management Institute. 2010. ISBN 1-933890-66-5.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="i-processi-del-modello-operativo">
+<h3>I processi del modello operativo<a class="headerlink" href="#i-processi-del-modello-operativo" title="Link a questa intestazione">¶</a></h3>
+<p>Di seguito sono riportati i processi organizzativi per ciascuna linea d&#8217;azione del modello presentato in Figura 5.</p>
+<div class="section" id="linea-1-dati-nativi">
+<h4>Linea 1: Dati Nativi<a class="headerlink" href="#linea-1-dati-nativi" title="Link a questa intestazione">¶</a></h4>
+<p>La linea 1 dei dati nativi tratta tutta la filiera di gestione ed esposizione dei dati esistenti generati dalle amministrazioni. Questi dati sono principalmente prodotti dai vari uffici durante l’adempimento delle proprie funzioni istituzionali. La maggior parte di questi dati possono essere pubblicati come dati aperti, portando un’ineludibile fonte potenziale di sviluppo per il territorio e per l’intero sistema Paese.</p>
+<p><strong>Censimento</strong>. All’interno dei singoli uffici o dei vari settori dell’amministrazione vanno quindi ricercate quelle che si possono chiamare “basi di dati primarie” oggetto del censimento. Si tratta di individuare quegli uffici che generano, mantengono e sono responsabili delle specifiche tipologie di dati che si vogliono rendere aperti (e.g., lo sportello unico per le attività produttive (SUAP) del comune è lo strumento che va a semplificare gli adempimenti connessi alla creazione, l’avvio, la modifica e la cessazione delle imprese per la produzione di beni e servizi. L’ufficio SUAP gestisce e mantiene quindi l’archivio con i dati di tutte le imprese del territorio).</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last"><strong>Si raccomanda al responsabile Open Data di effettuare una ricognizione interna</strong>, alla luce della normativa vigente, in collaborazione con i responsabili delle basi di dati, <strong>al fine di individuare l’insieme di dati esistenti pubblicabili in formato aperto.</strong> Ciascun soggetto preposto alla gestione di una particolare base di dati <strong>indica al responsabile Open Data, tra le altre cose, le caratteristiche descrittive del dato, i tracciati record, il tasso temporale di aggiornamento, e ogni altra informazione utile</strong> a far comprendere le caratteristiche peculiari dei dati.</p>
+</div>
+<p>In quelle realtà in cui il processo di apertura dei dati ha raggiunto una fase matura, il concetto di dato nativo può evolvere, includendo non solo i dati raccolti perché legati all’attività amministrativa, ma anche tutte quelle informazioni che, una volta aperte, possano abilitare nuove forme di riutilizzo dell’informazione.  Per esempio, se finora per un ufficio non era prioritario raccogliere in maniera strutturata un certo tipo di dato (e.g., gli esercizi che vendono prodotti a km zero o i locali che hanno prodotti per celiaci), perché non strettamente correlato a qualche norma o regolamento amministrativo, il solo fatto che un dato “nativo” poi viene aperto e reso fruibile in forme strutturate al cittadino, lo rende un dato utile all’attività istituzionale nel concetto “esteso” della pubblica amministrazione, inteso non solo come soggetto erogatore di servizi pubblici, ma anche come espositore di patrimonio informativo che abilita nuove forme di business sul mercato. I dati aperti, quindi,  modificano il concetto stesso di utilità del dato inserendo nella categoria dei dati “nativi” della PA informazioni che prima non erano ritenute tali dalla PA stessa, ma che risultano invece utili all’esterno.</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last"><strong>Si raccomanda</strong> quindi <strong>l’adozione di un approccio di tipo “demand- driven” per individuare i dati nativi che tenga conto dell’impatto economico e sociale nonché del livello di interesse degli utilizzatori</strong> suddivisi opportunamente per categorie (e.g., cittadini, imprese, altre pubbliche amministrazioni), dei loro requisiti e delle loro necessità.</p>
+</div>
+<p>A tal riguardo si evidenzia che il titolare del dato, ai sensi dell&#8217;articolo 5 comma 2 del D.lgs 36/2006 come modificato dal  D.lgs 18 maggio 2015, n. 102 e s.m.i., stabilisce le modalità di acquisizione delle richieste con proprio provvedimento, instaurando così una collaborazione con le suddette categorie che possono sfruttare tali modalità per avanzare le proprie proposte.</p>
+<p><strong>Analisi giuridica delle fonti.</strong> Alla fase di censimento fa seguito l’analisi giuridica delle fonti del dato. Essa è fondamentale per garantire sostenibilità nel tempo del processo di produzione e pubblicazione dei dati e creare un servizio equilibrato nel rispetto della funzione pubblica e dei diritti dei singoli individui. L’analisi giuridica delle fonti mira quindi a valutare questi delicati equilibri, evidenziando limitazioni d’uso, finalità di competenza, determinazione dei diritti e dei termini di licenza.</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Si riporta di seguito una breve <strong>“check list”, utile per verificare se tutti gli aspetti giuridici</strong> sono stati valutati dal responsabile della banca dati in collaborazione con il responsabile Open Data. La check list è formata da una serie di domande, per ciascun aspetto, a cui rispondere con Sì o No.</p>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="66%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Aspetto</th>
+<th class="head">Domanda</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Privacy</td>
+<td><div class="first last line-block">
+<div class="line">i dati sono liberi da ogni informazione personale che possa</div>
+<div class="line">identificare in modo diretto l&#8217;individuo (nome, cognome, indirizzo,</div>
+<div class="line">codice fiscale, patente, telefono, email, foto, descrizione fisica,</div>
+<div class="line">ecc.)? In caso negativo  queste informazioni sono autorizzate per</div>
+<div class="line">legge?</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Privacy</td>
+<td><div class="first last line-block">
+<div class="line">i dati sono liberi da ogni informazione indiretta che possa</div>
+<div class="line">identificare l&#8217;individuo (caratteristiche personali che possono</div>
+<div class="line">identificare facilmente il soggetto)? In caso negativo queste</div>
+<div class="line">informazioni sono autorizzate per legge?</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Privacy</td>
+<td><div class="first last line-block">
+<div class="line">i dati sono liberi da ogni informazione sensibile riconducibile</div>
+<div class="line">all&#8217;individuo? In caso negativo queste informazioni sono</div>
+<div class="line">autorizzate per legge?</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Privacy</td>
+<td><div class="first last line-block">
+<div class="line">i dati sono liberi da ogni informazione relativa al soggetto che</div>
+<div class="line">incrociata con dati comunemente reperibili nel web (e.g. google</div>
+<div class="line">maps,linked data, ecc.) possa identificare l&#8217;individuo? In caso</div>
+<div class="line">negativo queste informazioni sono autorizzate per legge?</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Privacy</td>
+<td><div class="first last line-block">
+<div class="line">i dati sono liberi da ogni riferimento a profughi, protetti di</div>
+<div class="line">giustizia, vittime di violenze o in ogni caso categorie protette?</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Privacy</td>
+<td><div class="first last line-block">
+<div class="line">hai considerato il rischio di de-anonimizzazione del tuo dataset</div>
+<div class="line">prima di pubblicarlo?</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Privacy</td>
+<td><div class="first last line-block">
+<div class="line">esponi dei servizi di ricerca tali da poter filtrare i dati in modo</div>
+<div class="line">da ottenere un solo record geolocalizzato, che sia facilmente</div>
+<div class="line">riconducibile ad una persona fisica?</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Proprietà intellettuale della sorgente</td>
+<td><div class="first last line-block">
+<div class="line">il dataset è stato creato da uno o più dipendenti della tua</div>
+<div class="line">pubblica amministrazione nell&#8217;ambito della loro attività lavorativa?</div>
+<div class="line">I singoli elementi del dataset suscettibili di autonoma protezione</div>
+<div class="line">(es., immagini, fotografie, testi in qualche modo creativi) sono stati</div>
+<div class="line">a loro volta prodotti da uno o più dipendenti della tua pubblica</div>
+<div class="line">amministrazione nell&#8217;ambito della loro  attività lavorativa?</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Proprietà intellettuale della sorgente</td>
+<td><div class="first last line-block">
+<div class="line">l&#8217;amministrazione è proprietaria dei dati, anche se non sono stati</div>
+<div class="line">creati direttamente da suoi dipendenti??</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Proprietà intellettuale della sorgente</td>
+<td><div class="first last line-block">
+<div class="line">sei sicuro di non usare dati per i quali vi è una licenza o un</div>
+<div class="line">brevetto di terzi?</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Proprietà intellettuale della sorgente</td>
+<td><div class="first last line-block">
+<div class="line">se i dati non sono della tua amministrazione hai un accordo o una</div>
+<div class="line">licenza che ti autorizzi a pubblicarli?</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Licenza di rilascio</td>
+<td><div class="first last line-block">
+<div class="line">stai rilasciando i dati di cui possiedi la proprietà accompagnati da</div>
+<div class="line">una licenza?</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Licenza di rilascio</td>
+<td><div class="first last line-block">
+<div class="line">hai incluso anche la clausola di salvaguardia &#8220;Questo dataset</div>
+<div class="line">contiene informazioni indirettamente riferibili a persone fisiche.</div>
+<div class="line">In ogni caso, i dati non possono essere utilizzati al fine di</div>
+<div class="line">identificare nuovamente gli interessati.&#8221;?</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Limiti alla pubblicazione</td>
+<td><div class="first last line-block">
+<div class="line">hai verificato che non vi siano impedimenti di legge o contrattuali</div>
+<div class="line">che per la pubblicazione dei dati?</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Segretezza</td>
+<td><div class="first last line-block">
+<div class="line">hai verificato se non vi siano motivi di ordine pubblico o di</div>
+<div class="line">sicurezza nazionale che ti impediscono la pubblicazione dei dati?</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Segretezza</td>
+<td><div class="first last line-block">
+<div class="line">hai verificato se non vi siano motivi legati al segreto d&#8217;ufficio</div>
+<div class="line">che impediscono la pubblicazione dei dati?</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Segretezza</td>
+<td><div class="first last line-block">
+<div class="line">hai verificato se non vi siano motivi legati al segreto di</div>
+<div class="line">stato che impediscono la pubblicazione dei dati?</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Temporalizzazione</td>
+<td><div class="first last line-block">
+<div class="line">i dati sono soggetti per legge a restrizioni temporali di</div>
+<div class="line">pubblicazione?</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Temporalizzazione</td>
+<td><div class="first last line-block">
+<div class="line">i dati sono aggiornati frequentemente in modo da sanare eventuali</div>
+<div class="line">informazioni lesive di persone o organizzazioni?</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Temporalizzazione</td>
+<td><div class="first last line-block">
+<div class="line">i dati hanno dei divieti di legge o giurisprudenziali che</div>
+<div class="line">impediscono la loro indicizzazione da parte di motori di ricerca?</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Trasparenza</td>
+<td><div class="first last line-block">
+<div class="line">i dati rientrano nella lista dell’allegato A del d.lgs. 33/2013?</div>
+<div class="line">Se sì come sono stati trattati dal responsabile della trasparenza</div>
+<div class="line">nella sezione “Amministrazione trasparente”?</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Analisi della qualità dei dati.</strong> All’analisi giuridica delle fonti segue l’analisi della qualità dei dati. Per la definizione del concetto generale di qualità si può ricorrere alla norma ISO 9000:2015, secondo cui la qualità è la totalità degli elementi e delle caratteristiche di un prodotto o servizio che concorrono alla capacità dello stesso di soddisfare esigenze espresse o implicite.
+Nella sezione dedicata alla <a class="reference external" href="#qualita-dei-dati">“qualità dei dati”</a> di seguito riportata si identificano alcune misure e un metodo di valutazione, considerando gli standard ISO di riferimento ISO/IEC 25012 e lo standard ISO/IEC 25024.</p>
+<p><strong>Bonifica.</strong> Generalmente l’analisi della qualità del dato può richiedere una fase di bonifica. Infatti, i dati all&#8217;interno dei sistemi informativi o degli archivi di un’amministrazione sono spesso “sporchi” e non rispondenti ai requisiti di qualità (e.g., accuratezza, completezza, ecc.). L’apertura dei dati può essere uno stimolo importante per la conduzione di attività mirate di bonifica. Si distinguono processi di bonifica <em>basati sui dati e basati sui processi</em>. I processi di <em>bonifica basati sui dati</em> prevedono che il dataset sia corretto in uno dei due seguenti modi: (i) confronto con il mondo reale (anche con attività economicamente onerose come contattare direttamente i soggetti preposti alla gestione della base dati che presenta errori per correggerli insieme loro) e (ii) confronto incrociato (matching) con altri dataset. Tali processi hanno il vantaggio di poter pervenire in termini relativamente brevi al risultato, ma lo svantaggio di non risolvere il problema alla radice. Infatti, in un arco temporale medio-lungo, i dataset potrebbero nuovamente presentare i problemi di qualità.
+I processi di <em>bonifica basati sui processi</em> hanno invece la caratteristica di analizzare le cause che hanno portato alla scarsa qualità del dato e di rivedere i processi di produzione del dato per garantirne la qualità nel tempo. Per esempio, se si riscontra che la scarsa accuratezza di una base di dati deriva da un processo di “data entry” manuale, si può intervenire prevedendo una fase di acquisizione automatica dei dati che minimizzi la possibilità di errore di acquisizione. L’adozione di processi di bonifica “basati sui processi” ha dunque il consistente vantaggio di essere una strategia risolutiva.</p>
+<p><strong>Politiche di accesso e licenza.</strong>  Altro aspetto importante da considerare sono eventuali forme di aggregazione dei dati e restrizioni di accesso, che hanno anche un impatto sulla scelta della licenza, tappa quest’ultima prevista dal modello operativo e trattata ampiamente in <a class="reference external" href="licenzecosti.html">“Aspetti legali e di costo”</a> a cui si rimanda.</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last"><strong>Sebbene sia sconsigliato restringere l’accesso ai dati o procedere con la pubblicazione di aggregazioni degli stessi</strong> (in generale non è opportuno che l’esposizione del dato lavorato avvenga senza che sia stato pubblicato prioritariamente il dato grezzo), <strong>esistono casi in cui i dati possono essere diffusi solo in forma anonima</strong> (ad esempio i redditi), <strong>ossia a un livello di aggregazione tale da impedire di identificare le persone cui i dati si riferiscono</strong>. A tal fine, è <strong>bene definire delle politiche di accesso ai dati in cui sia indicato un profilo di accesso specifico per ogni dato, dettato dai diritti sull’informazione di base, dalle norme o dalle policy in atto</strong>.</p>
+</div>
+<p><strong>Analisi di processo, (re)ingegnerizzazione dei processi organizzativi e produzione dei dati.</strong> Ogni dato ha un proprio ciclo di vita, caratterizzato da uno specifico tasso di aggiornamento o manutenzione.</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Risulta quindi necessario <strong>analizzare il processo organizzativo che produce e gestisce il dato per fare in modo che la produzione di quel dato sia consolidata e diventi stabile, secondo la frequenza di aggiornamento e le modalità di rilascio adottate</strong>.</p>
+</div>
+<p>Vanno quindi individuati non solo i dati nativi “grezzi” di partenza ma anche gli attori che concorrono alla prima produzione del dato, distinguendo chi è responsabile e titolare dello stesso e chi invece aggiunge altri elementi informativi nel processo produttivo. Quello che accade sovente nelle amministrazioni è che i dati sono gestiti da singoli funzionari, nell’ambito di processi “verticali” chiusi a livello di dipartimento e molto spesso ancorati alle conoscenze di una persona specifica. Accade così che elementi conoscitivi importanti siano delocalizzati tra i servizi di competenza, senza che tuttavia sussista una gestione federata e complessiva della risorsa dati. Questo fatto, tra i molteplici effetti negativi, ha spesso quello della duplicazione dei dati: uffici tematicamente contigui tendono a replicare informazioni funzionali alla propria attività, con un incremento del rumore di fondo attorno al patrimonio informativo dell’amministrazione. L&#8217;utilizzo di codici condivisi a livello nazionale, di classificazioni comuni per tipologie di dato non dipendenti da specifici domini e ll passaggio  verso la creazione di una risorsa federata (fase data hub interno) consentono di superare progressivamente le suddette criticità. L’impegno politico e il relativo sostegno da parte dei livelli manageriali più alti costituiscono comunque il prerequisito fondamentale senza il quale ogni sforzo può essere vano.</p>
+<p><strong>Metadatazione.</strong> Il risultato delle precedenti tappe del modello operativo si traduce nella produzione di metadati che, in buona sostanza, certificano le caratteristiche del dato. Come detto precedentemente la metadatazione è cruciale: una delle peggiori malattie che affliggono i dati della PA è la molteplicità di copie disponibili di una stessa informazione, senza che sussista la necessaria certezza sulle caratteristiche e sulla validazione di ciascun rilascio. <strong>Si ricorda a tal riguardo di seguire il modello per i metadati</strong> descritto in <a class="reference external" href="modellometadati.html">“Modello per i metadati”</a> e in particolare il <strong>profilo DCAT-AP_IT che consente di specificare i più importanti metadati descrittivi per i dataset</strong> (e.g., soggetti e relativi ruoli, contestualizzazione geografica e temporale, licenza, frequenza di aggiornamento, aspetti di distribuzione, punto di contatto, ecc.).</p>
+<p><strong>Data hub interno, produzione di livello 3, e pubblicazione.</strong> Nel modello operativo proposto, la risorsa federata è rappresentata dal cosiddetto data hub interno. Essa è una piattaforma dove far confluire tutti i dati prodotti dai diversi dipartimenti dell’amministrazione nella loro versione rilasciata ufficialmente. Questa infrastruttura, una volta attivata e messa a regime, viene a contenere lo stato dell’arte del patrimonio informativo e costituisce un potente punto di riferimento, accessibile da parte delle autorità di accesso, secondo diverse modalità (a “tag” o “query”). Essa, inoltre, costituisce lo snodo fondamentale, non solo per la linea dei dati nativi che può proseguire verso la produzione e la pubblicazione di dataset di livello 3, ma per tutte le altre direttrici indicate.
+In generale, il data hub interno, presumibilmente creato anche attraverso basi di dati consolidate e mantenute costantemente aggiornate attraverso l&#8217;inserimento di dati da parte dei funzionari dell&#8217;amministrazione, può essere agevolmente utilizzato per la gestione di un processo dinamico e sostenibile nel tempo di produzione di dati aperti, periodicamente aggiornati a ogni nuova revisione del data hub stesso.
+Infine, è bene notare che l&#8217;uso degli standard previsti per i livelli 4 e 5 del modello per i dati aperti (i.e., standard del Web semantico, come per esempio RDF e OWL descritti in <a class="reference external" href="arch.html">“Architettura dell’informazione del settore pubblico”</a>) può facilitare la definizione e la gestione del data hub interno, consentendo una più agevole integrazione tra i dati del patrimonio informativo.</p>
+<p><strong>Conservazione e storicizzazione.</strong> I dataset rilasciati costituiscono non solo una risorsa per la collettività, ma un prezioso patrimonio anche per le pubbliche amministrazioni che possono in questo modo archiviare in modo alternativo i loro dati in modalità indipendente dagli applicativi software originali che li hanno prodotti. Per questo motivo è importante premunirsi di un sistema di archiviazione/conservazione che mantenga le diverse versioni dei dati nel lungo periodo.
+A tal fine si raccomanda di assicurare che le versioni stesse siano accessibili a un URL stabile, che sia anche documentato unitamente alla pubblicazione del dato.</p>
+</div>
+<div class="section" id="linea-2-dati-mashup">
+<h4>Linea 2: Dati Mashup<a class="headerlink" href="#linea-2-dati-mashup" title="Link a questa intestazione">¶</a></h4>
+<p>Oltre alla pubblicazione dei dati nativi, attività istituzionali multidisciplinari, che coinvolgono più di una pubblica amministrazione, potrebbero rendersi necessarie. Inoltre è cruciale la sensibilità dell&#8217;amministrazione rispetto agli stimoli e alle proposte provenienti dalla società civile. A tal riguardo, ogni nuovo dato in questa linea nasce da uno specifico “concept”. ovvero la proposta necessaria a definire gli elementi fondamentali di un progetto. All&#8217;interno di un “concept” si identifica l’idea generale e le linee guida del progetto che ne accompagnano la declinazione nel corso della fase esecutiva. Al “concept” fa seguito la raccolta delle informazioni dalle diverse fonti interne ed esterne che concorrono alla formazione del dato. Questa operazione di “mashup” (da cui il nome della linea) non implica soltanto la raccolta del dato da fonti diverse e la relativa definizione degli algoritmi di integrazione. La parte più importante è la definizione delle modalità di accesso a partire dalle politiche dei singoli produttori dei dati e le relative modalità di rilascio e aggiornamento dei dati. Questo tipo di dati, nati a seguito di particolari esigenze o di determinati disegni strategici, sono creati in funzione dell’esposizione al pubblico e del conseguente coinvolgimento. Per questo, essi si prestano a forme di coinvolgimento e visualizzazione (“data visualization”) particolarmente innovative che spesso sono definite già a livello di “concept”. Il risultato ultimo di questa linea è la produzione di API e/o la pubblicazione di altri dataset. In generale, si raccomanda di utilizzare un approccio di pubblicazione dataset/API, pubblicando come API sicuramente i dataset che necessitano di un aggiornamento dinamico e variabile, alleviando dall’onere dell’aggiornamento manuale.</p>
+<p>Si noti infine che i risultati attesi da questa linea possono essere anche ottenuti con l’applicazione dei principi e metodologie previste per la linea 3 dei Linked Open Data, di seguito descritta, grazie ai collegamenti possibili tra i dati.</p>
+</div>
+<div class="section" id="linea-3-linked-open-data">
+<h4>Linea 3: Linked Open Data<a class="headerlink" href="#linea-3-linked-open-data" title="Link a questa intestazione">¶</a></h4>
+<p>Nel modello operativo proposto in Figura 5, la linea Linked Open Data è raffigurata come una filiera di lavorazione autonoma in quanto considerata ancora per molte amministrazioni, soprattutto medio piccole, un percorso complesso da intraprendere, dove sono richieste competenze tecniche specifiche.</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Tuttavia, l&#8217;intenzione delle presenti linee guida è quella di <strong>governare una transizione graduale verso la produzione nativa dei Linked Open Data</strong> e, le  iniziative significative in merito da parte dell’ISTAT, dell’ISPRA, del Ministero dell’Economia e Finanze, del Ministero dell’Agricoltura del Ministero dei Beni e delle Attività Culturali e del Turismo, per citarne alcune, <strong>indicano che tale transizione può essere possibile, soprattutto se trainata da pubbliche amministrazioni centrali e regionali</strong>.</p>
+</div>
+<p>Nel modello operativo, vi è una chiara interconnessione tra la linea dei dati nativi e quella dei Linked Open Data. La connessione tra queste due linee (seppur non illustrata graficamente in Figura 5) è anche rafforzata dal fatto che alcune delle fasi attraversate dalla linea dei dati nativi sono necessarie per avviare, analogamente, il percorso sulla linea dei Linked Open Data. E&#8217; altresì importante notare che nella pratica si ritiene a volte necessario passare da modelli di rappresentazione tradizionali come quello relazionale per la modellazione dei dati operando opportune trasformazioni poi per renderli disponibili secondo i principi dei Linked Open Data. Tuttavia tale pratica non è necessariamente quella più appropriata: esistono situazioni per cui può essere più conveniente partire da un&#8217;ontologia del dominio e che si intende modellare e dall&#8217;uso di standard del Web semantico per poter governare i processi di gestione dei dati.
+Sebbene le linee guida della Commissione di Coordinamento SPC1 sull’interoperabilità semantica attraverso i Linked Open Data siano risalenti al 2012, la metodologia ivi proposta risulta essere ancora valida e solida per una produzione ottimale di Linked Open Data. Infatti, analizzando alcune fasi appartenenti alla linea dei dati nativi (i.e., censimento, analisi della qualità, bonifica e metadatazione) e alla linea dei Linked Open Data (i.e., modellazione, ontologia, inferenza, interlinking, validazione e pubblicazione) si nota come queste richiamino integralmente le sette fasi dell’approccio metodologico delle suddette linee guida. <strong>Si incoraggiano quindi le amministrazioni a riferirsi ancora a quel lavoro per affrontare il processo di produzione di Linked Open Data</strong>.</p>
+</div>
+<div class="section" id="linea-4-coinvolgimento-engagement">
+<h4>Linea 4: Coinvolgimento (Engagement)<a class="headerlink" href="#linea-4-coinvolgimento-engagement" title="Link a questa intestazione">¶</a></h4>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p><strong>AZIONE 7: DEFINISCI UNA CHIARA STRATEGIA DI COINVOLGIMENTO INTERNO ED ESTERNO</strong></p>
+<p class="last"><strong>Si raccomanda alle amministrazioni di accompagnare il modello operativo con azioni di coinvolgimento degli stakeholder sia interni all’amministrazione che esterni.</strong>
+Il <em>coinvolgimento interno</em> può avvenire attraverso la diffusione della cultura dei dati di qualità e aperti, facendo comprendere l’impatto di questa diffusione anche in termini semplificativi delle procedure interne.
+Il <em>coinvolgimento esterno</em> passa in primo luogo dall’identificazione dei soggetti da coinvolgere (e.g., studenti universitari, soggetti preposti a indagini e analisi statistiche e/o economiche, startup e aziende). In secondo luogo esso passa dalla definizione della forma di coinvolgimento, da quella più semplice della comunicazione, anche interattiva, all’individuazione di scenari d’uso affiancati da forme più strutturate di coinvolgimento quali l’organizzazione di eventi per promuovere alcune tipologie di dataset e/o per analizzare casi d’uso, hackaton e app showcase.</p>
+</div>
+<p>Il percorso di coinvolgimento si relaziona facilmente anche con il noto modello internazionale a cinque stelle dell’engagement, proposto dal ricercatore inglese Tim Davies per attivare una strategia di rilascio di dataset aperti che sia il più possibile inclusiva. Il modello si compone dei seguenti livelli:</p>
+<div class="figure">
+<a class="reference internal image-reference" href="_images/Star1.png"><img alt="Star 1" src="_images/Star1.png" style="width: 4%;" /></a>
+</div>
+<p>Essere guidati dalla domanda – pubblicare dati che soddisfino una domanda specifica di stakeholder esterni implica cominciare a ridurre le continue richieste di dati a un ufficio.</p>
+<div class="figure">
+<a class="reference internal image-reference" href="_images/Star2.png"><img alt="Star 2" src="_images/Star2.png" style="width: 9%;" /></a>
+</div>
+<p>Inserire dati nel contesto – accompagnare i dati con una ricca documentazione ne permette un facile riutilizzo. Porli nel corretto contesto amplifica tale possibilità. Due ottimi esempi di implementazione di strategia di engagement di livello 2 vengono dal progetto recente Open Cantieri del Ministero delle Infrastrutture e dei Trasporti e dal progetto &#8220;OpenCoesione&#8221; del Dipartimento per lo Sviluppo e la Coesione Sociale. Il portale OpenCoesione presenta una grafica, corredata da una mappa e diagrammi, che permettono di prendere visione, in maniera efficace, della distribuzione dei fondi sociali europei sul territorio italiano. L&#8217;applicazione permette inoltre di scaricare i dati sia nella loro totalità, sia nello specifico caso dei progetti presentati o nelle loro aggregazioni per categoria o amministrazione comunale/provinciale/regionale.</p>
+<div class="figure">
+<a class="reference internal image-reference" href="_images/Star3.png"><img alt="Star 3" src="_images/Star3.png" style="width: 14%;" /></a>
+</div>
+<p>Supportare conversazioni intorno ai dati – Molti cataloghi Open Data ospitano una sezione FAQ e offrono diversi canali di interazione quali email o social network attraverso cui dialogare con l&#8217;ente pubblico che distribuisce i dati. Nuovamente, il caso di OpenCoesione può essere visto come una buona iniziativa di coinvolgimento di questo livello in quanto offre la possibilità di usufruire di tali canali per innescare una conversazione online.</p>
+<div class="figure">
+<a class="reference internal image-reference" href="_images/Star4.png"><img alt="Star 4" src="_images/Star4.png" style="width: 19%;" /></a>
+</div>
+<p>Creare capacità, competenze e reti – in questo livello rientra la fase “scenari d’uso” nel presentare i dati attraverso infografiche interattive si fornisce la possibilità di capire al meglio i dati. Rimane importante però stimolare il riutilizzo organizzando, ove possibile, incontri formativi volti a spiegare i dati e/o a mostrare strumenti di pulizia, analisi, e visualizzazione. Tra gli esempi virtuosi di tali pratiche rientrano “School of Data” dell’Open Knowledge Foundation, i datalab promossi da ISTAT e “A scuola di OpenCoesione” del Dipartimento per lo Sviluppo e la Coesione Sociale e del Ministero dell’Istruzione.</p>
+<div class="figure">
+<a class="reference internal image-reference" href="_images/Star5.png"><img alt="Star 5" src="_images/Star5.png" style="width: 24%;" /></a>
+</div>
+<p>Collaborare su dati come una risorsa comune – il rilascio dei dati prevede cicli di feedback con una comunità di riferimento (spesso quella da cui si è partiti per aprire i dati) da cui trarne delle considerazioni e produrre nuovi dati e strumenti. Nuovamente, l&#8217;esempio di OpenCoesione fornisce iniziative virtuose di coinvolgimento a cinque stelle quali hackaton organizzati con la comunità e il progetto monithon.it dove, attraverso segnalazioni partendo dai progetti presentati nel sito di OpenCoesione, chiunque può riportare informazioni aggiuntive per stimolare evoluzioni dei progetti finanziati).</p>
+</div>
+</div>
+<div class="section" id="coordinamento-tra-il-livello-nazionale-e-locale">
+<h3>Coordinamento tra il livello nazionale e locale<a class="headerlink" href="#coordinamento-tra-il-livello-nazionale-e-locale" title="Link a questa intestazione">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p><strong>AZIONE 8: FACILITA IL COORDINAMENTO TRA IL LIVELLO NAZIONALE E LOCALE ATTRAVERSO GLI OPEN DATA ...</strong></p>
+<p>Diverse pubbliche amministrazioni centrali, al fine di adempiere a specifici obblighi normativi a loro assegnati o per dar seguito a impegni presi in iniziative internazionali (e.g., Open Government Partnership), hanno necessità di raccogliere dati provenienti dal livello di governo locale (e.g., SIOPE per la rilevazione telematica degli incassi e dei pagamenti di tutte le amministrazioni, ISTAT per le rilevazioni relative ai censimenti o ai numeri civici, Dipartimento della Protezione Civile che opera quasi esclusivamente sulla base di tale modello). In queste situazioni, <strong>si raccomanda alle amministrazioni di coordinarsi tra loro prima di intraprendere iniziative singole isolate</strong>. In particolare, le amministrazioni centrali possono assumere un ruolo di coordinatore e di promotore di apertura dei dati secondo i livelli più alti del modello per i dati aperti proposto dalle presenti linee guida, <strong>definendo anche schemi comuni</strong> secondo quanto descritto in <a class="reference external" href="arch.html">“Architettura dell’informazione del settore pubblico”</a>.</p>
+<p class="last"><strong>Si raccomanda poi di mantenere il colloquio, mediante scambio di dati, tra il livello centrale e locale attraverso l’uso dei dati aperti stessi</strong>, ove presenti, automatizzando quanto più possibile il processo di acquisizione da parte del livello centrale.</p>
+</div>
+<p>Con un eventuale supporto tecnico, su richiesta, di AgID, si consiglia inoltre di:</p>
+<blockquote>
+<div><ul class="simple">
+<li>identificare l’insieme minimo di dati rilasciati dal livello centrale, anche secondo quanto stabilito da disposizioni normative, e quelli che il livello locale può ulteriormente dettagliare per cogliere le specificità della propria realtà locale, abilitando ove possibile meccanismi automatici di collegamento tra i due insiemi. Questo consentirebbe di avere una vista nazionale e un unico punto di accesso centrale ai dati, e una vista locale e più specializzata offerta dal governo locale. Si noti che il paradigma dei Linked Open Data può essere particolarmente conveniente in questi casi in quanto il collegamento degli URI consentirebbe un’agevole integrazione dei dati e navigazione degli stessi da parte di programmi;</li>
+<li>documentare sia a livello centrale che locale i dati secondo il profilo nazionale per i metadati DCAT-AP_IT con l’aggiunta dei metadati di provenienza come precedentemente discusso, al fine di agevolare i possibili utilizzatori nel comprendere le diverse fasi di gestione del dato.</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="qualita-dei-dati">
+<h2>Qualità dei dati<a class="headerlink" href="#qualita-dei-dati" title="Link a questa intestazione">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p><strong>AZIONE 9: GARANTISCI LE SEGUENTI DIMENSIONI DI QUALITA&#8217; DEI DATI ...</strong></p>
+<p>Partendo dalle quattro caratteristiche, delle 15 previste dall’ISO/IEC 25012, individuate nella Determinazione Commissariale n. 68/2013 dell’AgID per le banche dati di interesse nazionale critiche, si garantisce il loro costante rispetto in tutto il processo di gestione e pubblicazione dei dati anche aperti. Queste quattro caratteristiche sono:</p>
+<blockquote class="last">
+<div><ul class="simple">
+<li><strong>accuratezza (sintattica e  semantica)</strong> - il dato, e i suoi attributi, rappresenta correttamente il valore reale del concetto o evento cui si riferisce;</li>
+<li><strong>coerenza</strong> - il dato, e i suoi attributi, non presenta contraddittorietà rispetto ad altri dati del contesto d’uso dell&#8217;amministrazione titolare;</li>
+<li><strong>completezza</strong> –  il dato risulta esaustivo per tutti i suoi valori attesi e rispetto alle entità relative (fonti) che concorrono alla definizione del procedimento;</li>
+<li><strong>attualità  (o tempestività di aggiornamento)</strong> -  il dato, e i suoi attributi, è del “giusto tempo” (è aggiornato) rispetto al procedimento cui si riferisce.</li>
+</ul>
+</div></blockquote>
+</div>
+<p>Il miglioramento della qualità dei dati, e la maggiore diffusione delle tecniche di misurazione, dipende da vari fattori tra cui l’adesione a modelli di qualità condivisi. Il raggiungimento della qualità non è in ogni caso frutto di un impegno sporadico di singole amministrazioni, ma il frutto di una sinergia concertata che, basata su un cambio culturale, si apra a collaborazioni orizzontali che, pur nel rispetto della privacy, consentano un maggior dialogo tra le banche dati e razionalizzazione delle informazioni.</p>
+<p>Per determinare la bontà dei dati è necessario definire delle misure attraverso le quali quantificare la qualità dei dati. Lo standard ISO/IEC 25012:2008, divenuto norma italiana UNI ISO/IEC 25012:2014, definisce un insieme di caratteristiche specifiche per la caratterizzazione della qualità dei dati: accuratezza, aggiornamento, completezza, consistenza, credibilità, accessibilità, comprensibilità, conformità, efficienza, precisione, riservatezza, tracciabilità, disponibilità, portabilità e ripristinabilità.
+Di queste caratteristiche, le presenti linee guida richiedono la garanzia di almeno quattro come elencate in azione 9, ovvero accuratezza, coerenza, completezza e attualità (o tempestività di aggiornamento).
+Il passo successivo è quantificarle in termini di misure, individuando delle soglie che consentano di discriminare la bontà o meno di un dato rispetto alla caratteristica in esame.
+La fase di valutazione della qualità dei dati è importante in tutti i sistemi informativi indipendentemente dall’apertura dei dati. Con l’adozione di politiche di apertura dei dati, la qualità dei dati assume un ruolo ancora più rilevante in quanto elemento per la certificazione della bontà dei dati forniti e soprattutto dell’appropriatezza rispetto all’utilizzo che del dato si vuole fare.
+L’ISO/IEC 25024 estende l’ISO/IEC 25012 “Data quality model” del 2008 al campo delle misurazioni, definendo 63 misure di qualità applicabili alle 15 caratteristiche di qualità dei dati, con le relative funzioni di calcolo.
+Per le quattro caratteristiche di qualità, messe in risalto dalla Determinazione Commissariale dell&#8217;Agenzia per l&#8217;Italia Digitale n. 68/2013, si riporta nella tabella seguente un insieme esemplificativo di misure, sulle 24 definite nello standard ISO per le stesse caratteristiche, a supporto delle attività di valutazione della qualità dei dati delle amministrazioni.</p>
+<div class="section" id="caratteristiche-di-qualita">
+<h3>Caratteristiche di qualità<a class="headerlink" href="#caratteristiche-di-qualita" title="Link a questa intestazione">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="22%" />
+<col width="64%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Caratteristiche</th>
+<th class="head">Descrizione</th>
+<th class="head">Misure e funzioni di misura principali</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Completezza</td>
+<td><div class="first last line-block">
+<div class="line">il grado per cui il</div>
+<div class="line">dato associato a</div>
+<div class="line">un’entità presenta</div>
+<div class="line">valori per tutti</div>
+<div class="line">gli attributi attesi</div>
+<div class="line">e relative istanze</div>
+<div class="line">in un certo contesto</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">Si individuano le i seguenti livelli di completezza:</div>
+<div class="line">1. <strong>completezza di schema:</strong> 1) percentuale di valori nulli</div>
+<div class="line">per concetti e proprietà rispetto al numero totale di valori</div>
+<div class="line">attesi;</div>
+<div class="line">2. <strong>completezza dei record:</strong> 2) numero di dati elementari</div>
+<div class="line">associati a un valore non nullo in un record, rispetto al</div>
+<div class="line">numero di dati elementari del record per cui può essere</div>
+<div class="line">misurata la completezza;</div>
+<div class="line">3. <strong>completezza di popolazione:</strong> percentuale di valori nulli</div>
+<div class="line">rispetto a una popolazione di riferimento.</div>
+<div class="line">Si noti che non sempre valori mancanti indicano</div>
+<div class="line">incompletezza. Per esempio: si supponga di considerare</div>
+<div class="line">dati relativi ai musei italiani e ai loro canali di contatto</div>
+<div class="line">(telefono ed email). Può capitare che i musei abbiano tutti</div>
+<div class="line">un indirizzo email ma non per tutti è presente un numero</div>
+<div class="line">di telefono.</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Accuratezza</td>
+<td><div class="first last line-block">
+<div class="line">Il grado in cui</div>
+<div class="line">gli attributi</div>
+<div class="line">rappresentano in</div>
+<div class="line">maniera corretta il</div>
+<div class="line">valore reale del</div>
+<div class="line">dato in uno</div>
+<div class="line">specifico contesto</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">Si individuano due tipi di accuratezza:</div>
+<div class="line">1. <strong>sintattica:</strong> ad esempio Girgia invece che Giorgia</div>
+<div class="line">2. <strong>semantica:</strong> ad esempio nel caso in cui si utilizzi</div>
+<div class="line">Gloria Sani intendendo invece un’altra persona e.g.,</div>
+<div class="line">Giorgia Sani</div>
+<div class="line">Una misura dell’accuratezza è data dalla ratio tra gli</div>
+<div class="line">attributi dei dati che hanno valori accurati</div>
+<div class="line">sintatticamente/semanticamente su il numero di attributi</div>
+<div class="line">dei dati per i quali è richiesta accuratezza</div>
+<div class="line">sintattica/semantica.</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Coerenza</td>
+<td><div class="first last line-block">
+<div class="line">Il grado in cui gli</div>
+<div class="line">attributi del dato</div>
+<div class="line">non sono in</div>
+<div class="line">contraddizione con</div>
+<div class="line">altri dati in uno</div>
+<div class="line">specifico contesto</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">Per poter valutare la coerenza una misura è quella che</div>
+<div class="line">consente di identificare le violazioni di regole semantiche</div>
+<div class="line">definite su alcuni elementi dei dati.</div>
+<div class="line">Per esempio, se una persona è “patentata” non può essere</div>
+<div class="line">possibile che la sua età sia “17 anni”.</div>
+<div class="line">Essa può essere calcolata come la ratio tra il numero di</div>
+<div class="line">attributi dei dati i cui valori sono semanticamente corretti</div>
+<div class="line">nel dataset sul numero di attributi dei dati per i quali</div>
+<div class="line">sono state definite delle regole semantiche.</div>
+<div class="line">Altra misura consiste nel rapporto tra il numero di valori</div>
+<div class="line">duplicati per ogni attributo della base dati e il numero</div>
+<div class="line">totale degli elementi della base dati.</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Tempestività</td>
+<td><div class="first last line-block">
+<div class="line">Il grado in cui gli</div>
+<div class="line">attributi del dato</div>
+<div class="line">sono al &#8220;giusto</div>
+<div class="line">tempo&#8221; rispetto al</div>
+<div class="line">contesto di</div>
+<div class="line">riferimento</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">La metrica è basata sull’uso dei metadati che indicano</div>
+<div class="line-block">
+<div class="line">quando il dato è stato aggiornato l’ultima volta.</div>
+</div>
+<div class="line">Sulla base di questi metadati, si distinguono poi:</div>
+<div class="line">1. <strong>dati con periodicità di aggiornamento nota</strong>: in</div>
+<div class="line">questo caso 1) è possibile calcolare la tempestività in</div>
+<div class="line">maniera esatta identificando se la data di ultima modifica</div>
+<div class="line">del dato rispetto al tempo di misurazione ricade</div>
+<div class="line">nell’intervallo della frequenza di aggiornamento;</div>
+<div class="line">2. <strong>dati con periodicità di aggiornamento media</strong>:</div>
+<div class="line">in questo caso è possibile calcolare la tempestività</div>
+<div class="line">media con una percentuale di errore.</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="certificati-open-data-odi">
+<h3>Certificati Open Data ODI<a class="headerlink" href="#certificati-open-data-odi" title="Link a questa intestazione">¶</a></h3>
+<p>A completamento della suddetta analisi, si ricorda anche un’iniziativa nota dell’Istituto Open Data inglese (ODI) sui <a class="reference external" href="https://certificates.theodi.org/en/">certificati Open Data</a>. I certificati sono uno strumento utile per ottenere un’auto-certificazione sulla qualità dei dati prodotti e pubblicati. I certificati sono stati tradotti anche in italiano dal nodo dell&#8217;ODI di Trento.
+Per ottenere il certificato è necessario compilare un questionario online suddiviso in cinque macro- categorie che aiutano a identificare una scala di riutilizzo di un dataset. Queste sono: informazioni descrittive (molte delle quali già richieste dalle presenti linee guida), informazioni legali (che devono aver già trovato risposte positive ed esaustive mediante la “check list” proposta nella fase di analisi giuridica delle fonti), informazioni pratiche (e.g., reperibilità, note metodologiche, ecc.), informazioni tecniche e informazioni sociali.
+Le risposte alle domande producono un livello di certificazione che si distingue in: (i) “bronze”, che rappresenta una base per iniziare il processo di apertura dei dati; (ii) “silver”, dove il dato è documentato in un formato aperto e machine-readable e gli utilizzatori dei dati possono ricevere maggior supporto; (iii) “gold”, che fornisce le garanzie del livello precedente con ulteriori riguardanti l’aggiornamento costante e un più ampio supporto, (iv) “platinum”, che racchiude le garanzie gold, identificatori univoci dei dati; rappresenta quindi un’eccellente esempio di infrastruttura informativa.</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Un analogo concetto ai certificati ODI è applicato nell&#8217;ambito del Data &amp; Analytics Framework per i dataset (aperti e non) che esso tratta.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+                        </div>
+                        <div class="articleComments">
+                            
+                        </div>
+                    </div>
+                    <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="arch.html" class="btn float-right" title="Architettura dell’Informazione del Settore Pubblico" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="modellometadati.html" class="btn" title="Modello per i metadati" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+		<a href="http://www.agid.gov.it">Agenzia per l'Italia Digitale</a> - <a href="https://creativecommons.org/licenses/by/4.0/">Licence: CC-BY 4.0</a> -
+      Ultimo aggiornamento 31/07/2017.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using the official <a href="https://github.com/italia/sphinx_italia_theme">Italia theme</a> based on the <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+    
+ 
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT: './',
+            VERSION: 'versione 1.0 - 2017',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE: true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>   
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+      
+    <script type="text/javascript">
+        jQuery(function() {
+            SphinxRtdTheme.StickyNav.enable();
+        });
+    </script>
+     
+
+</body>
+
+</html>
