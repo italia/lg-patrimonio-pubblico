@@ -4,7 +4,7 @@ Questo documento rappresenta l'aggiornamento annuale, previsto dall'articolo 52 
 
 Il documento sarà in costante aggiornamento anche a seguito dei lavori che si svolgeranno nella seconda metà del 2017.
 
-Le linee guida sono ora navigabili [online](http://lg-patrimonio-pubblico.readthedocs.io/en/latest/) e collegate anche a guide tecniche disponibili online (incluse le [linee guida per i cataloghi dati](https://linee-guida-cataloghi-dati-profilo-dcat-ap-it.readthedocs.io/it/latest/), le [schede descrittive delle basi dati di interesse nazionale](http://pianotri-schede-bdin.readthedocs.io/en/latest/) e l'[elenco delle basi dati chiave](http://elenco-basi-di-dati-chiave.readthedocs.io/it/latest/)).
+Le linee guida sono ora navigabili [online](http://lg-patrimonio-pubblico.readthedocs.io/it/latest/) e collegate anche a guide tecniche disponibili online (incluse le [linee guida per i cataloghi dati](https://linee-guida-cataloghi-dati-profilo-dcat-ap-it.readthedocs.io/it/latest/), le [schede descrittive delle basi dati di interesse nazionale](http://pianotri-schede-bdin.readthedocs.io/en/latest/) e l'[elenco delle basi dati chiave](http://elenco-basi-di-dati-chiave.readthedocs.io/it/latest/)).
 
 ### Requisiti
 
