@@ -14,7 +14,7 @@ Le linee guida sono ora navigabili [online](http://lg-patrimonio-pubblico.readth
 Dopo aver apportato le dovute modifiche in [`src/`](./src) esegui
 
 ```
-sphinx-build -b html src docs
+sphinx-build -na src docs
 ```
 
 oppure
