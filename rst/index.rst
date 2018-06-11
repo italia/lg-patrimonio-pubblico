@@ -1,4 +1,4 @@
-Linee Guida Nazionali per la Valorizzazione del Patrimonio Informativo Pubblico
+Linee guida nazionali per la valorizzazione del patrimonio informativo pubblico
 ===============================================================================
 
 Questo documento rappresenta le linee guida per la valorizzazione del patrimonio informativo pubblico per l'anno 2017 pubblicate dall'Agenzia per l'Italia Digitale.
