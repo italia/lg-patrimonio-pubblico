@@ -151,7 +151,7 @@ Formati aperti per i documenti
 
 L’articolo 1 del nuovo CAD definisce:
 
-  *p) documento informatico: lil documento elettronico che contiene la rappresentazione informatica di atti, fatti o dati giuridicamente rilevanti;
+  *p) documento informatico: il documento elettronico che contiene la rappresentazione informatica di atti, fatti o dati giuridicamente rilevanti;
   p-bis) documento analogico: la rappresentazione non informatica di atti, fatti o dati giuridicamente rilevanti.*
 
 Il contesto normativo del recepimento della direttiva relativa al riutilizzo dell’informazione del settore pubblico (D.lgs 2006, 24 gennaio, n. 36 – art. 2), definisce il documento come "*la rappresentazione di atti, fatti e dati a prescindere dal supporto nella disponibilità della pubblica amministrazione o dell’organismo di diritto pubblico. La definizione di documento non comprende i programmi informatici*”.
