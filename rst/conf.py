@@ -54,10 +54,12 @@ extensions = [
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
+# Already available in Docs Italia.
+# Needs to be removed: see https://github.com/italia/docs.italia.it/issues/240
 # The suffix of source filenames.
-source_parsers = {
-    '.md': CommonMarkParser,
-}
+#source_parsers = {
+#    '.md': CommonMarkParser,
+#}
 
 source_suffix = ['.rst', '.md']
 
@@ -101,14 +103,16 @@ exclude_patterns = ['.DS_Store', 'README', 'README.md', '.venv*']
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
+# Already available in Docs Italia.
+# Needs to be removed: see https://github.com/italia/docs.italia.it/issues/240
 # -- AutoStructify --------------------------------------------------------
-def setup(app):
-    app.add_config_value('recommonmark_config', {
-        'auto_toc_tree_section': 'Contents',
-        'enable_eval_rst': True,
-        'enable_auto_doc_ref': True
-    }, True)
-    app.add_transform(AutoStructify)
+#def setup(app):
+#    app.add_config_value('recommonmark_config', {
+#        'auto_toc_tree_section': 'Contents',
+#        'enable_eval_rst': True,
+#        'enable_auto_doc_ref': True
+#    }, True)
+#    app.add_transform(AutoStructify)
 
 
 # -- Options for HTML output ----------------------------------------------
